@@ -1,0 +1,41 @@
+.container{
+    padding : 1.2rem;
+    background: linear-gradient(135deg, #a5bcf5 10%, #b38dfa 80%);
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBarOptionContainer{
+    display: flex;
+}
+
+.buttonJoin {
+    background: #5AB9EA;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buttonJoin:hover {
+    background: #8860D0;
+}
+
+@media only screen and (max-width : 600px){
+    .container{
+        padding : 1.1rem;
+        min-width : 95%;
+        background: linear-gradient(135deg, #a5bcf5 10%, #b38dfa 80%);
+    }
+
+    .fixer{
+        margin-right : 0.5rem;
+    }
+}

@@ -1,0 +1,147 @@
+.Container {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  padding-bottom: 5rem;
+
+}
+
+.Container h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e8e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.Container > p {
+  text-align: center;
+  color: #8a8a9a;
+  font-size: 1rem;
+  padding: 3rem 0;
+  background: #fafbff;
+  border-radius: 12px;
+  border: 1px dashed #d5d9e8;
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: #ffffff;
+  border: 1px solid #eceef5;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 46, 0.04);
+  transition: all 0.25s ease;
+}
+
+.userCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(99, 102, 241, 0.12);
+  border-color: #c7cbfd;
+}
+
+.userCard img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eef0ff;
+  flex-shrink: 0;
+  background: #eef0ff;
+}
+
+.userInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.userInfo p:first-child {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userInfo p:last-child {
+  font-size: 0.9rem;
+  color: #6b6b80;
+}
+
+.userActions {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.acceptButton,
+.rejectButton {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.acceptButton {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.acceptButton:hover {
+  background: #4f52e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+}
+
+.rejectButton {
+  background: #ffffff;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+}
+
+.rejectButton:hover {
+  background: #fef2f2;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .userCard {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .userCard img {
+    margin: 0 auto;
+  }
+
+  .userInfo {
+    width: 100%;
+    align-items: center;
+  }
+
+  .userActions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .acceptButton,
+  .rejectButton {
+    flex: 1;
+  }
+}

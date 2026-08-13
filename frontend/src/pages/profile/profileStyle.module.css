@@ -1,0 +1,336 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 5.2rem;
+  background-color: #e0e3f6;
+}
+
+.backDropContainer {
+  width: 100%;
+  height: 15rem;
+  background : url("/image/backdropImg.jpg");
+  background-size : cover;
+  background-position : center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.profileImage {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #5680E9;
+  position: absolute;
+  bottom: -20%;
+  left: 1.5rem;
+  background: #fff;
+}
+
+.backDrop_overlay{
+    height: 8em;
+    width: 8em;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -20%;
+    left: 1.5rem;
+    background: #fff;
+    z-index: 4;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: #fafafa;
+    opacity: 0.0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.backDrop_overlay:hover{
+    opacity : 0.8;
+    background: black;
+}
+
+.profileContainer_details {
+  margin-top: 2rem;
+  background: #eef0f6;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #5680E9;
+}
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profileMain {
+  flex: 1;
+  min-width: 220px;
+}
+
+.profileIdentityRow h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.profileIdentityRow p {
+  margin: 0.25rem 0 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.profileBio {
+  margin: 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.activityColumn {
+  margin-top: 2rem;
+  flex: 1;
+  min-width: 260px;
+}
+
+.activityTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+
+.activityEmpty {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.postCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  background: #fafafa;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card_profileContiner img {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.workHistory {
+  background-color : #eef0f6;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #5AB9EA;
+}
+
+.workHistoryTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+
+.workHistoryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.WorkHistoryCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #fafafa;
+}
+
+.WorkHistoryCard p {
+  margin: 0.25rem 0;
+  color: #444;
+}
+
+.errorContainer {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #1a1a1a;
+}
+
+.errorContainer h2 {
+  font-size: 1.4rem;
+}
+
+.errorContainer p {
+  color: #888;
+}
+
+.profileIdentityRow > input {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.nameEdit{
+    font-weight: bold;
+    border: 2px solid #5680E9;
+    padding: 0.55rem 0.75rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 380px;
+    background: #F0F4FF;
+}
+
+.bioEdit {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.85rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid #d7d7ff;
+  resize: vertical;
+  background: #fbfbff;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+
+.editButton {
+  margin-left: 1rem;
+  background: transparent;
+  border: 1px solid #b7c1fc;
+  color: #2b2b7a;
+  padding: 0.35rem 0.7rem;
+  position: absolute;
+  right: 30em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .editButton {
+  margin-left: 1rem;
+  background: transparent;
+  border: 1px solid #b7c1fc;
+  color: #2b2b7a;
+  padding: 0.35rem 0.7rem;
+  position: sticky;
+  right: 30em;
+  border-radius: 6px;
+  cursor: pointer;
+  }
+}
+
+.editButton:hover{
+    background-color: #2b2b7a;
+    color: #f0f0f0;
+}
+
+.btn {
+  padding: 0.45rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.saveButton {
+  background: #4757ff;
+  color: #fff;
+}
+
+.cancelButton {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.workField {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 0.4rem;
+  box-sizing: border-box;
+}
+
+.addWorkButton {
+  margin-top: 0.6rem;
+  background: transparent;
+  border: 1px dashed #777;
+  color: #444;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.removeButton {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.smallControls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width : 600px) {
+  .editButton {
+    margin-top : 1rem; 
+    right: 26em;
+  }
+
+  .profileImage {
+  width: 6em;
+  height: 6em;
+  bottom: -20%;
+  left: 1.5rem;
+}
+
+
+.backDrop_overlay{
+    height: 6em;
+    width: 6em;
+}
+
+.container {
+  width : 90vw;
+  margin: 0 auto;
+}
+
+  .card {
+    display : block;
+    max-width : 150px;
+  }
+
+  .card > p {
+    margin-top : 0.5rem;
+    max-width : 150px;
+  }
+
+  .postCard{
+    max-width : fit-content;
+  }
+  
+}

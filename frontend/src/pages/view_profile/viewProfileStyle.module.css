@@ -1,0 +1,306 @@
+.container{
+    padding : 1.3rem;
+    background : #e0e3f6;
+    display : flex;
+    flex-direction : column;
+    gap : 1.3rem;
+}
+
+.backDropContainer{
+    width : 100%;
+    height : 30vh;
+    background : url("/image/backdropImg.jpg");
+    background-size : cover;
+    background-position : center;
+    background-repeat: no-repeat;
+    border-radius : 1rem;
+    position : relative;
+    display : flex;
+    align-items : flex-end;
+    justify-content : center;
+}
+
+.profileImage{
+    width : 6em;
+    height : 6em;
+    border-radius : 50%;
+    border : 4px solid white;
+    object-fit : cover;
+    transform : translate(-50%);
+    position : absolute;
+    left : 10%;
+    bottom : -50px;
+}
+
+.profileContainer_details{
+    padding-top : 6rem;
+}
+
+.profileHeader{
+    display : flex;
+    gap : 0.7rem;
+}
+
+.profileMain{
+    flex : 0.8;
+}
+
+.profileIdentityRow{
+    display : flex;
+    gap : 1.2rem;
+    width : fit-content;
+    align-items : center;
+}
+
+.profileIdentityRow h2{
+    margin : 0;
+    font-size : 1.7rem;
+    font-weight : 700;
+    color : #1a1a2e;
+    letter-spacing : -0.02em;
+}
+
+.profileIdentityRow p{
+    margin : 0;
+    color : #6b6b80;
+    font-size : 0.95rem;
+}
+
+.profileActionRow{
+    display : flex;
+    align-items : center;
+    gap : 1.2rem;
+    margin-top : 0.6rem;
+}
+
+.profileBio{
+    margin : 0;
+    color : #4b5163;
+    font-size : 0.98rem;
+    line-height : 1.55;
+    max-width : 55ch;
+}
+
+.resumeButton{
+    cursor : pointer;
+    display : flex;
+    align-items : center;
+    gap : 0.35rem;
+    padding : 0.45rem 0.9rem;
+    border-radius : 999px;
+    background : #f3f4ff;
+    border : 1px solid #e0e3ff;
+    color : #4f52e0;
+    transition : all 0.2s ease;
+}
+
+.resumeButton:hover{
+    background : #e7e9ff;
+    transform : translateY(-1px);
+    box-shadow : 0 4px 10px rgba(99, 102, 241, 0.15);
+}
+
+.resumeButton svg{
+    width : 1.2em;
+}
+
+.resumeButton p{
+    margin : 0;
+    font-size : 14px;
+    font-weight : 600;
+}
+
+/* ===== Buttons ===== */
+.connectButton{
+    padding : 0.5rem 1.4rem;
+    margin : 1rem 0;
+    background : #fd4747;
+    color : white;
+    border-radius : 999px;
+    font-weight : 600;
+    font-size : 0.95rem;
+    cursor : pointer;
+    border : none;
+    transition : all 0.25s ease;
+    box-shadow : 0 4px 12px rgba(253, 71, 71, 0.25);
+}
+
+.connectButton:hover{
+    background : #e33b3b;
+    transform : translateY(-2px);
+    box-shadow : 0 8px 18px rgba(253, 71, 71, 0.35);
+}
+
+.connectButton:active{
+    transform : translateY(0);
+}
+
+.connectedButton{
+    padding : 0.5rem 1.4rem;
+    margin : 1rem 0;
+    background : #2b6af1;
+    color : white;
+    border-radius : 999px;
+    font-weight : 600;
+    font-size : 0.95rem;
+    cursor : pointer;
+    border : none;
+    transition : all 0.25s ease;
+    box-shadow : 0 4px 12px rgba(43, 106, 241, 0.25);
+}
+
+.connectedButton:hover{
+    background : #1f56d6;
+    transform : translateY(-2px);
+    box-shadow : 0 8px 18px rgba(43, 106, 241, 0.35);
+}
+
+
+.activityColumn{
+    flex : 0.2;
+}
+
+.activityTitle{
+    font-size : 1.05rem;
+    font-weight : 700;
+    color : #1a1a2e;
+    margin : 0 0 0.6rem 0;
+    padding-bottom : 0.5rem;
+    border-bottom : 2px solid #eef0ff;
+}
+
+.activityEmpty{
+    color : #8a8a9a;
+    font-size : 0.92rem;
+    background : #fafbff;
+    border : 1px dashed #d5d9e8;
+    border-radius : 12px;
+    padding : 1.2rem;
+    text-align : center;
+}
+
+.postCard{
+    background : #ffffff;
+    border : 1px solid #eceef5;
+    border-radius : 14px;
+    padding : 1rem 1.1rem;
+    margin-bottom : 0.9rem;
+    box-shadow : 0 2px 8px rgba(26, 26, 46, 0.04);
+    transition : all 0.25s ease;
+}
+
+.postCard:hover{
+    transform : translateY(-3px);
+    box-shadow : 0 8px 22px rgba(99, 102, 241, 0.12);
+    border-color : #c7cbfd;
+}
+
+.postCard > p{
+    margin : 0;
+    color : #4b5163;
+    font-size : 0.9rem;
+    line-height : 1.5;
+}
+
+.card{
+    display : flex;
+    align-items : center;
+    gap : 1rem;
+}
+
+.card_profileContiner{
+    display : flex;
+    flex-shrink : 0;
+}
+
+.card_profileContiner > img{
+    width : 3rem;
+    height : auto;
+    border-radius : 10%;
+    object-fit : cover;
+    border : 1px solid #eef0ff;
+}
+
+.workHistoryTitle{
+    font-size : 1.15rem;
+    font-weight : 700;
+    color : #1a1a2e;
+    margin : 0.4rem 0 0 0;
+    padding-bottom : 0.6rem;
+    border-bottom : 2px solid #eef0ff;
+}
+
+.workHistoryContainer{
+    display : flex;
+    gap : 1rem;
+    padding-top : 1.4rem;
+    width : 100%;
+    flex-wrap : wrap;
+}
+
+.WorkHistoryCard{
+    min-width : fit-content;
+    padding : 0.9rem 1.2rem;
+    border-radius : 12px;
+    background : #ffffff;
+    border : 1px solid #eceef5;
+    box-shadow : 0 3px 10px rgba(173, 173, 173, 0.25);
+    transition : all 0.25s ease;
+}
+
+.WorkHistoryCard:hover{
+    transform : translateY(-3px);
+    box-shadow : 0 8px 20px rgba(99, 102, 241, 0.15);
+    border-color : #c7cbfd;
+}
+
+.WorkHistoryCard p{
+    margin : 0;
+    color : #4b5163;
+    font-size : 0.93rem;
+}
+
+.WorkHistoryCard p:first-child{
+    color : #1a1a2e;
+}
+
+
+@media (max-width : 768px){
+    .profileHeader{
+        flex-direction : column;
+        gap : 1.2rem;
+    }
+
+    .profileIdentityRow{
+        flex-wrap : wrap;
+        gap : 0.8rem;
+    }
+
+    .profileActionRow{
+        flex-wrap : wrap;
+        gap : 0.8rem;
+    }
+
+    .profileContainer_details{
+        padding-top : 5.5rem;
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .profileImage{
+        left : 15%;
+        height: 4rem;
+        width : 4rem;
+        bottom : -40;
+
+    }
+}
+
+@media only screen and (max-width : 800px){
+    .profileImage{
+        left : 20%;
+        height: 5rem;
+        width : 5rem;
+        bottom : -50;
+    }
+}

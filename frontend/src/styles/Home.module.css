@@ -1,0 +1,72 @@
+.container {
+    font-family: "Poppins";
+    padding: 1.2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6697d6 10%, #adc5f3 80%);
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding-inline: 2rem;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+
+.mainContainer_left {
+    flex: 0 1 480px;
+}
+
+.mainContainer_left p:first-child {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.mainContainer_left p:nth-child(2) {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #14181e;
+    margin-bottom: 1.25rem;
+}
+
+.mainContainer_right img {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.18);
+}
+
+.buttonJoin {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center;
+    margin-top: 1rem !important;
+    padding: 0.8rem 1.3rem !important ;
+    background: linear-gradient(90deg, #2563eb 0%, #4f46e5 100%);
+    color: white;
+    border-radius: 999px !important;
+    cursor: pointer;
+    font-size: 1rem !important;
+    font-weight: 600;
+    width: fit-content;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.buttonJoin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.3);
+}
+
+.buttonJoin p {
+    margin: 0;
+    line-height: 1;
+}
+
+

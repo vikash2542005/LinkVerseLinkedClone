@@ -1,0 +1,44 @@
+.discoverContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.allUserProfile{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.userCard{
+    display: flex;
+    gap : 1.2rem;
+    cursor: pointer;
+    padding : 1.3rem;
+    align-items: center;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.1);
+    background-color: rgb(181, 255, 255);
+}
+
+.userCard_img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width : 600px){
+    .userCard_img {
+        min-width: 20%;
+        border-radius: 50%;
+    }
+
+    .allUserProfile{
+        max-width: 100%;
+    }
+}
