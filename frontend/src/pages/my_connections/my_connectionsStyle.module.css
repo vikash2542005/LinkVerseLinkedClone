@@ -124,6 +124,7 @@
     align-items: flex-start;
     text-align: center;
     gap: 0.8rem;
+    background-color: whitesmoke;
   }
 
   .userCard img {
